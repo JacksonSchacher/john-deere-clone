@@ -1,0 +1,51 @@
+.hero-img {
+    width:100%;
+}
+.farm-item-img {
+    max-width: 100%;
+    height: auto;
+}
+.bg-kid-image {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.096)), url("https://www.deere.com/assets/images/common/home-page/july-homepage-hero-1366x347.jpg");
+    height:40vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.bg-grey {
+    background: #333;
+}
+a {
+    text-decoration: none;
+    color:white;
+}
+a:hover {
+    color: yellow;
+}
+.second-menu {
+    font-size: larger;
+}
+.card-img {
+    height: 40vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.bg-1 {
+    background-image: url("https://www.deere.com/assets/images/common/home-page/333G_SmartGrade_Homepage_632x384.jpg");
+}
+.bg-2 {
+    background-image: url("https://www.deere.com/assets/images/common/home-page/cf-july-home-page-gradient.jpg");
+}
+.bg-3 {
+    background-image: url("https://www.deere.com/assets/images/common/home-page/Aug-JDStore-homepage.jpg");
+}
+.bg-4 {
+    background-image: url("https://www.deere.com/assets/images/common/home-page/buyonline3-nmb.jpg");
+}
+.card-img>h3 {
+    color:white;
+}
+.card-img>h5 {
+    color:yellow;
+}

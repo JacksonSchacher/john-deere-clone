@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Deere US</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+        integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+        integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@5.9.55/css/materialdesignicons.min.css">
+    <style>
+        /* This is for wire framing to see our rows/columns */
+        body.debug .container,
+        body.debug .container-fluid {
+            outline: 2px double blue;
+            outline-offset: -2px;
+        }
+
+        body.debug .row {
+            outline: 2px dashed red;
+            outline-offset: -2px;
+        }
+
+        body.debug [class*="col-"] {
+            outline: 2px dotted forestgreen;
+            outline-offset: -3px;
+        }
+    </style>
+</head>
+
+<body class="debug mx-lg-5">
+    <header class="container-fluid bg-light">
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Disabled</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search">
+                    <button class="btn btn-outline my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+        <!-- Farm Items -->
+        <div class="row justify-content-center justify-content-between text-center">
+            <div class="col-lg-2 col-md-6 col-sm-12 d-flex flex-column justify-content-evenly p-2">
+                    <img class="farm-item-img img-fluid" src="https://www.deere.com/assets/images/common/home-page/agriculture-PSO-181x102.jpg" alt="">
+                    <p class="farm-items">Agriculture</p>
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-12 d-flex flex-column justify-content-evenly p-2">
+                <img class="farm-item-img img-fluid" src="https://www.deere.com/assets/images/common/home-page/lawn-and-garden-PSO-181x102.jpg" alt="">
+                <p class="farm-items">Lawn & Garden</p>
+            </div>
+
+            <div class="col-lg-2 col-md-6 col-sm-12 d-flex flex-column justify-content-evenly p-2">
+                <img class="farm-item-img img-fluid" src="https://www.deere.com/assets/images/common/home-page/construction-PSO-181x102.jpg" alt="">
+                <p class="farm-items">Construction</p>
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-12 d-flex flex-column justify-content-evenly p-2">
+                    <img class="farm-item-img img-fluid" src="https://www.deere.com/assets/images/common/home-page/landscaping-and-grounds-care-PSO-181x102.jpg"
+                    alt="">
+                <p class="farm-items">Landscaping & Grounds Care</p>             
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-12 d-flex flex-column justify-content-evenly p-2">
+                    <img class="farm-item-img img-fluid" src="https://www.deere.com/assets/images/common/home-page/golf-and-sports-turf-PSO-181x102.jpg"
+                    alt="">
+                <p class="farm-items">Golf & Sports Turf</p>              
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-12 d-flex flex-column justify-content-evenly p-2">
+                <img class="farm-item-img img-fluid" src="https://www.deere.com/assets/images/common/home-page/forestry-PSO-181x102.jpg" alt="">
+                <p class="farm-items">Forestry</p>
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-12 d-flex flex-column justify-content-evenly p-2">
+                <img class="farm-item-img img-fluid" src="https://www.deere.com/assets/images/common/home-page/engines-and-drivetrain-PSO-181x102.jpg"
+                    alt="">
+                <p class="farm-items">Engines & Drivetrain</p>
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-12 d-flex flex-column justify-content-evenly p-2">
+                <img class="farm-item-img img-fluid" src="https://www.deere.com/assets/images/common/home-page/military_excavator_181x102.jpg" alt="">
+                <p class="farm-items">Government & Military Sales</p>
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-12 d-flex flex-column justify-content-evenly p-2">
+                <img class="farm-item-img img-fluid" src="https://www.deere.com/assets/images/common/home-page/rental-sales-PSO-181x102.jpg" alt="">
+                <p class="farm-items">Rental Sales</p>
+            </div>
+        </div>
+        <div>
+            <!-- hero image -->
+            <div class="bg-kid-image text-light d-flex align-items-center">
+                <div class="ml-5">
+                <h1>What's the future look like to you?</h1>
+                <p>To us, it looks like cleaner, greener, and smarter solutions.</br>Because when we work together we reach our goal of a better tomorrow.
+                </p>
+                <button type="button" class="my-5 btn-discover">Discover how we help life leap forward</button>
+            </div>
+            </div>
+        </div>
+    </header>
+    <!-- Second Menu -->
+    <main class="container-fluid bg-light">
+        <div class="row bg-grey justify-content-around text-center second-menu p-3 m-5">
+            <div class="col-lg-2 col-md-12 col-sm-12">
+                <i class="mdi mdi-tractor p-2 mdi-spin mdi-38px text-light"></i><a href="#">Product Selector</a>
+            </div>
+            <div class="col-lg-2 col-md-12 col-sm-12">
+                <i class="mdi mdi-nut p-2 mdi-spin mdi-38px text-light"></i><a href="#">Build & Price</a>
+            </div>
+            <div class="col-lg-2 col-md-12 col-sm-12">
+                <i class="mdi mdi-radar p-2 mdi-spin mdi-38px text-light"></i><a href="#">Shop Pre Owned</a>
+            </div>
+            <div class="col-lg-2 col-md-12 col-sm-12">
+                <i class="mdi mdi-download p-2 mdi-spin mdi-38px text-light"></i><a href="#">Download Manuals</a>
+            </div>
+            <div class="col-lg-2 col-md-12 col-sm-12">
+                <i class="mdi mdi-cart p-2 mdi-spin mdi-38px text-light"></i><a href="#">Buy Parts</a>
+            </div>
+            <div class="col-lg-2 col-md-12 col-sm-12">
+                <i class="mdi mdi-tag p-2 mdi-spin mdi-38px text-light"></i><a href="#">Offers & Discounts</a>
+            </div>
+        </div>
+        <div class="row mx-5 my-2">
+            <div class="col-lg-6 col-sm-12">
+                <div class="card-img bg-1">
+                    <h3>ON YOUR MARK, ALL SET, GRADE.</h3>
+                    <h5>Boost accuracy and productivity with the new SmartGrade™ CTL <em>><em></h5>
+            </div>
+            <div class="col-lg-6 col-sm-12">
+                <div class="card-img bg-2">
+                    <h3>Enjoy free preventative maintenance parts & fluids for the first 3,000 hours</h3>
+                    <h5>Learn more about the limited time offer <em>></em></h5>
+                </div>
+            </div>
+            <div class="col-lg-6 col-sm-12">
+                <div class="card-img bg-3">
+                    <h3>Do It Yourself!</h3>
+                    <h5 class="text-light">Get 15% Off Home Maintenance Kits and MowerPlus™ Smart Connectors for Residential Riding Equipment.</h5>
+                    <button type="button" class="btn btn-outline">Start Saving</button>
+                </div>
+            </div>
+            <div class="col-lg-6 col-sm-12">
+                <div class="card-img bg-4">
+                    <h3>Buy Online and Get Free Delivery</h3>
+                    <h5 class="text-light">On select models for a limited time</h5>
+                    <button type="button" class="btn btn-outline">Buy Now</button>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <!-- living john deere h5 -->
+            <h3>LIVNG JOHN DEERE</h3>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-sm-12">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src=".../100px180/" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-h5">Card h5</h5>
+                        <p class="card-text">Some quick example text to build on the card h5 and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-12">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src=".../100px180/" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-h5">Card h5</h5>
+                        <p class="card-text">Some quick example text to build on the card h5 and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-12">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src=".../100px180/" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-h5">Card h5</h5>
+                        <p class="card-text">Some quick example text to build on the card h5 and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-12">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src=".../100px180/" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-h5">Card h5</h5>
+                        <p class="card-text">Some quick example text to build on the card h5 and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <h4>Search Parts by</h4>
+            <!-- search bar -->
+            <nav class="navbar navbar-light bg-light">
+                <form class="form-inline">
+                  <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+              </nav>
+              <span>Search Parts by Other Manufacturers</span>
+        </div>
+    </main>
+    <footer class="container-fluid bg-secondary">
+        <div class="row">
+            <div class="col-lg-3">
+                <ul class="footer-list">
+                    <h5>Products & Support</h5>
+                    <li>Equipment</li>
+                    <li>Find a Dealer</li>
+                    <li>Buy Online</li>
+                    <li>Build Your Own</li>
+                </ul>
+            </div>
+            <div class="col-lg-3">
+                <ul class="footer-list">
+                    <h5>Company Information</h5>
+                    <li>About Our Company</li>
+                    <li>Our Higher Purpose</li>
+                    <li>Innovation</li>
+                    <li>Sustainability</li>
+                    <li>Diversity Equity & Inclusion</li>
+                    <li>Careers</li>
+                    <li>Governanace</li>
+                    <li>Investor Relations</li>
+                </ul>
+            </div>
+            <div class="col-lg-3">
+                <ul class="footer-list">
+                    <h5>News & Publications</h5>
+                    <li>News and Announcements</li>
+                    <li>Newsroom</li>
+                    <li>The Furrow</li>
+                    <li>The Dirt</li>
+                    <li>The Landing</li>
+                    <li>Power Connect</li>
+                </ul>
+            </div>
+            <div class="col-lg-3">
+                <ul class="footer-list">
+                    <h5>Connect with John Deere</h5>
+                    <li>Factory Tours</li>
+                    <li>John Deere Historic Site</li>
+                    <li>John Deere Pavilion</li>
+                    <li>John Deere Store</li>
+                    <li>John Deere Tractor & Engine Museum</li>
+                    <li>John Deere Kids</li>
+                    <li>John Deere Rewards</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <!-- bottom shit -->
+        </div>
+    </footer>
+</body>
+
+</html>
